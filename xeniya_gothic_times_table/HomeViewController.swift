@@ -8,7 +8,7 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet var a_var: UILabel!
     @IBOutlet var b_var: UILabel!
@@ -25,6 +25,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // Set keyboard type to number pad
+        userGuess.keyboardType = .numberPad
+        // remove keyboard from screen https://www.youtube.com/watch?v=pD3gsZ1Tcmw
+        
+        // Automatically focus on the UITextField (optional)
+        // userGuess.becomeFirstResponder() // sideeffect: prevents keyboard be seen
         generateProblem()
     }
     
@@ -64,6 +71,7 @@ class ViewController: UIViewController {
         // Clear the text field & reset a problem
         userGuess.text = ""
         generateProblem()
+
     }
     
 }

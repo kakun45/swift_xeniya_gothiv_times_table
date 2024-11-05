@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  xeniya_gothic_times_table
 //
-//  Created by XS on 11/1/24.
+//  Created by Xeniya Shoiko on 11/1/24.
 //
 
 import UIKit
@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
         // remove keyboard from screen https://www.youtube.com/watch?v=pD3gsZ1Tcmw
         
         // Automatically focus on the UITextField (optional)
-        // userGuess.becomeFirstResponder() // sideeffect: prevents keyboard be seen
+        // userGuess.becomeFirstResponder() // side-effect: prevents keyboard to be seen
         generateProblem()
     }
     
